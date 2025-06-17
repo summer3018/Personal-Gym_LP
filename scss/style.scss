@@ -22,6 +22,10 @@ li {
 }
 
 .header{
+  height: 68px;
+  @include mq(md) {
+    height: 120px;
+  }
 
 }
 
@@ -33,7 +37,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 76px;
+  // gap: 76px;
   @include mq(md) {
     display: none;
   }
@@ -76,6 +80,10 @@ li {
   font-family: "Yu Mincho";
   font-weight: 600;
   letter-spacing: 2.8px;
+  margin-inline: 76px 21px;
+  @include mq(md) {
+    margin-inline: 57px 0;
+  }
 }
 
 //  PCヘッダーのスタイル

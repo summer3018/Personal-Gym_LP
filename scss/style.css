@@ -6,6 +6,15 @@ li {
   list-style: none;
 }
 
+.header {
+  height: 68px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 120px;
+  }
+}
+
 .header__inner {
   padding-inline: 20px;
 }
@@ -14,7 +23,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 76px;
 }
 @media screen and (min-width: 768px) {
   .sp-header {
@@ -58,6 +66,12 @@ li {
   font-family: "Yu Mincho";
   font-weight: 600;
   letter-spacing: 2.8px;
+  margin-inline: 76px 21px;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    margin-inline: 57px 0;
+  }
 }
 
 .pc-header {
