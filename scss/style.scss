@@ -86,12 +86,15 @@ li {
     display: block;
   }
 }
+.pc-nav{
+
+}
 
 .pc-nav__lists {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-block: 52px;
 }
 .pc-nav__list{
   display: flex;
