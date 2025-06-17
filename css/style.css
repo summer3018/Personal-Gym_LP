@@ -88,4 +88,13 @@ li {
   width: 130px;
   height: 93.378px;
   flex-shrink: 0;
+}
+
+.pc-nav__link {
+  color: #393327;
+  font-family: Lora;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px; /* 106.667% */
+  letter-spacing: 1.5px;
 }/*# sourceMappingURL=style.css.map */
