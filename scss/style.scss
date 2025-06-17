@@ -37,6 +37,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 7px 6px;
   // gap: 76px;
   @include mq(md) {
     display: none;
@@ -102,7 +103,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 52px;
+  padding-block: 13px;
   gap: 32px;
 }
 .pc-nav__list{
@@ -115,7 +116,7 @@ li {
   img{
     width: 130px;
     height: 93.378px;
-    flex-shrink: 0;
+    margin-inline: -9px;
   }
 }
 .pc-nav__link{

@@ -23,6 +23,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 7px 6px;
 }
 @media screen and (min-width: 768px) {
   .sp-header {
@@ -87,7 +88,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 52px;
+  padding-block: 13px;
   gap: 32px;
 }
 
@@ -102,7 +103,7 @@ li {
 .pc-headr__logo img {
   width: 130px;
   height: 93.378px;
-  flex-shrink: 0;
+  margin-inline: -9px;
 }
 
 .pc-nav__link {
