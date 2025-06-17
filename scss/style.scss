@@ -92,9 +92,10 @@ li {
 
 .pc-nav__lists {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-block: 52px;
+  gap: 32px;
 }
 .pc-nav__list{
   display: flex;
