@@ -1,0 +1,111 @@
+// ブレイクポイントのマップ定義
+$breakpoints: (
+  sm: 600px,
+  md: 768px,
+  lg: 900px,
+  xl: 1280px
+);
+
+// メディアクエリ用のミックスイン
+@mixin mq($breakpoint) {
+  @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header{
+
+}
+
+.header__inner{
+  padding-inline: 20px;
+}
+
+.sp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 76px;
+  @include mq(md) {
+    display: none;
+  }
+}
+.sp-header__logo {
+  max-width: 100%;
+  img{
+    width: 76px;
+    height: 54.702px;
+  }
+}
+
+  .hamburger {
+    width: 24px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 2px;
+      background: #333;
+      :nth-child(1) {
+        width: 100%;
+      }
+    }
+  }
+
+
+.header__button {
+  background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Yu Mincho";
+  font-weight: 600;
+  letter-spacing: 2.8px;
+}
+
+//  PCヘッダーのスタイル
+.pc-header {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.pc-nav__lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.pc-nav__list{
+  display: flex;
+  gap: 20px;
+}
+
+.pc-headr__logo {
+  max-width: 100%;
+  img{
+    width: 130px;
+    height: 93.378px;
+    flex-shrink: 0;
+  }
+}
+.pc-nav__link{
+
+}
