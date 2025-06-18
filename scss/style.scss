@@ -91,7 +91,7 @@ li {
 
   &.active span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -104,7 +104,6 @@ li {
   background-color: red;
   z-index: 1000;
   padding: 20px;
-  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
 
   &.active {
