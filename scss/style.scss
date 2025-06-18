@@ -51,37 +51,67 @@ li {
   }
 }
 
-  .hamburger {
-    width: 28px;
-    height: 21px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 5px;
+.hamburger {
+  width: 28px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
 
-    span {
-      display: block;
-      height: 0.5px;
-      background: #333;
-    }
-
-    span:nth-child(1) {
-      width: 90%; // 一番長い
-    }
-
-    span:nth-child(2) {
-      width: 70%; // 中間
-    }
-
-    span:nth-child(3) {
-      width: 50%; // 一番短い
-    }
+  span {
+    display: block;
+    height: 0.5px;
+    background: #333;
   }
 
+  span:nth-child(1) {
+    width: 90%;
+  }
 
+  span:nth-child(2) {
+    width: 70%;
+  }
+
+  span:nth-child(3) {
+    width: 50%;
+  }
+
+  &.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+    width: 100%;
+  }
+}
+
+.drawer-menu {
+  position: fixed;
+  top: 68px;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: red;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+
+  &.active {
+    right: 0;
+  }
+
+}
 
 .header__button {
   background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
@@ -92,12 +122,17 @@ li {
   font-family: "Yu Mincho";
   font-weight: 600;
   letter-spacing: 2.8px;
-  margin-inline: 73px 20px;
+  margin-left: 73px;
+  margin-right: 20px;
   margin-bottom: 6px;
+
   @include mq(md) {
-    margin-inline: 57px 0;
+    margin-left: 57px;
+    margin-right: 0;
   }
 }
+
+
 
 //  PCヘッダーのスタイル
 .pc-header {

@@ -45,6 +45,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 6px;
   background: none;
   border: none;
   cursor: pointer;
@@ -64,6 +65,32 @@ li {
 .hamburger span:nth-child(3) {
   width: 50%;
 }
+.hamburger.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+  width: 100%;
+}
+
+.drawer-menu {
+  position: fixed;
+  top: 68px;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: red;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+}
+.drawer-menu.active {
+  right: 0;
+}
 
 .header__button {
   background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
@@ -74,12 +101,14 @@ li {
   font-family: "Yu Mincho";
   font-weight: 600;
   letter-spacing: 2.8px;
-  margin-inline: 73px 20px;
+  margin-left: 73px;
+  margin-right: 20px;
   margin-bottom: 6px;
 }
 @media screen and (min-width: 768px) {
   .header__button {
-    margin-inline: 57px 0;
+    margin-left: 57px;
+    margin-right: 0;
   }
 }
 
