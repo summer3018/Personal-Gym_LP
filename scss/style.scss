@@ -52,29 +52,30 @@ li {
 }
 
   .hamburger {
-    width: 24px;
-    height: 20px;
+    width: 28px;
+    height: 21px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: none;
     border: none;
     cursor: pointer;
+    margin-bottom: 5px;
 
     span {
       display: block;
-      height: 2px;
+      height: 0.5px;
       background: #333;
     }
 
     span:nth-child(1) {
-      width: 100%; // 一番長い
+      width: 90%; // 一番長い
     }
-  
+
     span:nth-child(2) {
       width: 70%; // 中間
     }
-  
+
     span:nth-child(3) {
       width: 50%; // 一番短い
     }
@@ -85,13 +86,14 @@ li {
 .header__button {
   background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
   color: white;
-  padding: 12px 28px;
-  border-radius: 4px;
+  padding: 7px 26px;
+  border-radius: 2px;
   font-size: 14px;
   font-family: "Yu Mincho";
   font-weight: 600;
   letter-spacing: 2.8px;
-  margin-inline: 76px 21px;
+  margin-inline: 73px 20px;
+  margin-bottom: 6px;
   @include mq(md) {
     margin-inline: 57px 0;
   }
