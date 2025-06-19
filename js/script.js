@@ -1,20 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".js-drawer");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".js-drawer");
 
-  if (!hamburger || !navMenu) return;
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-  // ハンバーガークリックで開閉
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  });
+document.querySelectorAll(".drawer-menu-link").forEach(function (link) {
+  link.addEventListener("click", function () {
+    // ハンバーガーボタンから active を外す
+    document.querySelector(".hamburger").classList.remove("active");
 
-  // メニュー内リンクをクリックしたら閉じる
-  document.querySelectorAll(".drawer-menu-link").forEach((link) => {
-    link.addEventListener("click", () => {
-      hamburger.classList.remove("active");
-      navMenu.classList.remove("active");
-    });
+    // ドロワーメニューから active を外す
+    document.querySelector(".js-drawer").classList.remove("active");
   });
 });
+
