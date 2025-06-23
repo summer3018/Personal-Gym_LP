@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
 }
@@ -42,10 +43,10 @@ li {
 .header__button {
   background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
   color: white;
-  padding: 7px 26px;
+  padding: 12px 28px;
   border-radius: 2px;
   font-size: 14px;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
   font-weight: 600;
   letter-spacing: 2.8px;
   margin-left: 73px;
@@ -54,6 +55,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .header__button {
+    padding-block: 18px 16px;
+    padding-inline: 40px;
     margin-left: 57px;
     margin-right: 0;
   }
