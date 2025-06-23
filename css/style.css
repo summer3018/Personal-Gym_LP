@@ -154,6 +154,7 @@ li {
 @media (min-width: 768px) {
   .pc-header {
     display: block;
+    height: 120px;
   }
 }
 
