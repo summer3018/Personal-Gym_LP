@@ -56,7 +56,8 @@ li {
 .header__button {
   background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
   color: white;
-  padding: 12px 28px;
+  padding-block: 12px;
+  padding-inline: 28px;
   border-radius: 2px;
   font-size: 14px;
   font-family: $Minchou;
