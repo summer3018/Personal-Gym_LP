@@ -56,7 +56,7 @@ li {
 .header__button {
   background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
   color: white;
-  padding-block: 12px;
+  padding-block: 8px;
   padding-inline: 28px;
   border-radius: 2px;
   font-size: 14px;
@@ -72,6 +72,7 @@ li {
     padding-inline: 40px;
     margin-left: 57px;
     margin-right: 0;
+    font-size: 16px;
     &:hover{
       opacity: 0.7;
     }
@@ -204,6 +205,9 @@ li {
 
 .pc-headr__logo {
   max-width: 100%;
+  @include mq(md) {
+    padding-inline: 23px 24px;
+  }
   img{
     width: 130px;
     height: 93.378px;
