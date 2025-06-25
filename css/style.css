@@ -56,11 +56,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .header__button {
-    padding-block: 18px 16px;
-    padding-inline: 40px;
-    margin-left: 57px;
+    padding-block: 13px;
+    padding-inline: 41px;
+    margin-left: 0px;
     margin-right: 0;
     font-size: 16px;
+    margin-block: 0 3px;
   }
   .header__button:hover {
     opacity: 0.7;
@@ -173,16 +174,10 @@ li {
 
 .pc-headr__logo {
   max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .pc-headr__logo {
-    padding-inline: 23px 24px;
-  }
+  margin-inline: 23px 24px;
 }
 .pc-headr__logo img {
-  width: 130px;
   height: 93.378px;
-  margin-inline: -9px;
 }
 
 .pc-nav__link {
@@ -192,4 +187,8 @@ li {
   font-weight: 400;
   line-height: 16px; /* 106.667% */
   letter-spacing: 1.5px;
+}
+
+.pc-nav__spacer {
+  width: 57px;
 }/*# sourceMappingURL=style.css.map */
