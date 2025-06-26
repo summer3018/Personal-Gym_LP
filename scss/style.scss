@@ -36,7 +36,7 @@ li {
   padding-inline: 20px;
   @include mq(md) {
     padding-inline: 0;
-    // margin-inline: 190px;
+    margin-inline: 190px;
   }
 }
 
@@ -75,8 +75,7 @@ li {
   @include mq(md) {
     padding-block: 14px;
     padding-inline: 41px;
-    margin-left: 0px;
-    margin-right: 0;
+    margin-inline: 0;
     font-size: 16px;
     margin-block: 0 3px;
     &:hover{
@@ -199,7 +198,8 @@ li {
 }
 
 .pc-nav__lists {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
   justify-content: center;
   align-items: center;
   padding-block: 13px;
