@@ -234,10 +234,39 @@ li {
 }
 
 
-
-// .price__link{
-//   margin-inline: 23px -32px;
-// }
-// .voice__link{
-//   margin-inline: -32px 23px;
-// }
+// mv
+.mv{
+  font-family: $Minchou;
+  background-image: url(../image/mv-bg.png);
+}
+.mv__inner{
+  display: flex;
+  flex-direction: column;
+}
+.mv-title{
+  color: #393327;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px; /* 150% */
+  letter-spacing: 2.4px;
+  margin-block: 42px 9px;
+  padding-inline: 55px;
+}
+.mv-text{
+  color: #393327;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px; /* 150% */
+  margin-block: 0 -50px;
+  display: grid;
+  justify-content: center; /* 水平中央のみ */
+}
+.mv-image{
+  max-width: 100%;
+  img{
+    // width: 396px;
+    height: 449px;
+    margin-inline: 13px 0;
+  }
+}
