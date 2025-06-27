@@ -226,7 +226,7 @@ li {
 }
 
 .mv__inner {
-  margin-block: 38px 9px;
+  margin-block: 37px 9px;
 }
 
 .mv__container {
@@ -247,7 +247,17 @@ li {
   line-height: 36px; /* 150% */
   letter-spacing: 2.4px;
   padding-inline: 55px;
-  margin-block: 0 12px;
+  margin-block: 0 11px;
+}
+
+.mv-title__middle {
+  font-size: 22px;
+  letter-spacing: 2.2px;
+}
+
+.mv-title__small {
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .mv-text {
@@ -257,6 +267,7 @@ li {
   line-height: 21px; /* 150% */
   display: grid;
   justify-content: center; /* 水平中央のみ */
+  margin-inline: 0 10px;
 }
 
 .mv-image {
