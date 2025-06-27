@@ -39,8 +39,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .header__inner {
-    padding-inline: 0;
-    margin-inline: 190px;
+    padding-inline: 190px;
   }
 }
 
@@ -79,7 +78,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .header__button {
-    padding-block: 18px;
+    padding-block: 12px;
     padding-inline: 41px;
     margin-inline: 0;
     font-size: 16px;
@@ -204,8 +203,8 @@ li {
   grid-template-columns: repeat(8, auto);
   justify-content: center;
   align-items: center;
-  padding-block: 13px 9px;
-  gap: 32px;
+  padding-block: 11px 9px;
+  gap: 24px;
 }
 
 .pc-nav__list {
@@ -214,7 +213,6 @@ li {
 
 .pc-headr__logo {
   max-width: 100%;
-  margin-inline: 24px;
 }
 .pc-headr__logo img {
   height: 93.378px;
