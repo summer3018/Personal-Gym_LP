@@ -62,7 +62,7 @@ li {
   background: linear-gradient(to right, #8B6C3A 0%, #B19464 50%, #8B6C3A 100%);
   color: white;
   padding-block: 8px;
-  padding-inline: 28px;
+  padding-inline: 27px;
   border-radius: 2px;
   font-size: 14px;
   font-family: $Minchou;
@@ -260,11 +260,12 @@ li {
   background-image: url(../image/mv-bg.png);
 }
 .mv__inner{
-
+  margin-block: 38px 9px;
 }
 .mv__container{
   display: flex;
   flex-direction: column;
+  // gap: 12px;
 }
 .mv-title{
   color: #393327;
@@ -273,23 +274,25 @@ li {
   font-weight: 600;
   line-height: 36px; /* 150% */
   letter-spacing: 2.4px;
-  margin-block: 42px 9px;
   padding-inline: 55px;
+  margin-block: 0 12px;
 }
 .mv-text{
   color: #393327;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px; /* 150% */
-  margin-block: 0 -50px;
+  // margin-block: 0 -50px;
   display: grid;
   justify-content: center; /* 水平中央のみ */
 }
 .mv-image{
   max-width: 100%;
+  margin-block: -49px 0;
+  margin-inline: 15px 0;
   img{
     // width: 396px;
     height: 449px;
-    margin-inline: 13px 0;
+    
   }
 }
