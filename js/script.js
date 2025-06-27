@@ -1,18 +1,26 @@
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".js-drawer");
+const drawerMenu = document.querySelector(".js-drawer");
+const overlay = document.querySelector(".js-overlay");
 
+// ハンバーガーボタンがクリックされたらメニューとオーバーレイを開閉
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+  drawerMenu.classList.toggle("active");
+  overlay.classList.toggle("is-active");
 });
 
-document.querySelectorAll(".drawer-menu-link").forEach(function (link) {
-  link.addEventListener("click", function () {
-    // ハンバーガーボタンから active を外す
-    document.querySelector(".hamburger").classList.remove("active");
-
-    // ドロワーメニューから active を外す
-    document.querySelector(".js-drawer").classList.remove("active");
+// メニュー内リンクがクリックされたらメニューとオーバーレイを閉じる
+document.querySelectorAll(".drawer-menu-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    drawerMenu.classList.remove("active");
+    overlay.classList.remove("is-active");
   });
 });
 
+// オーバーレイがクリックされたらメニューとオーバーレイを閉じる
+overlay.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  drawerMenu.classList.remove("active");
+  overlay.classList.remove("is-active");
+});

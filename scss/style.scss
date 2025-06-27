@@ -183,6 +183,26 @@ li {
   }
 }
 
+// オーバーレイ（背景マスク）
+.overlay {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(140, 109, 59, 0.70);
+  z-index: 999; // ヘッダーより下、メニューより下
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+// ドロワーが開いている時に表示
+.overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 //  PCヘッダーのスタイル
 .pc-header {
@@ -240,6 +260,9 @@ li {
   background-image: url(../image/mv-bg.png);
 }
 .mv__inner{
+
+}
+.mv__container{
   display: flex;
   flex-direction: column;
 }

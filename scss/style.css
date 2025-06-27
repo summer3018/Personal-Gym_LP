@@ -154,6 +154,24 @@ li {
   align-items: center;
 }
 
+.overlay {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(140, 109, 59, 0.7);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .pc-header {
   display: none;
 }
@@ -207,7 +225,7 @@ li {
   background-image: url(../image/mv-bg.png);
 }
 
-.mv__inner {
+.mv__container {
   display: flex;
   flex-direction: column;
 }
