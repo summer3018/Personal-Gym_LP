@@ -81,12 +81,11 @@ li {
   font-family: $Minchou;
   font-weight: 600;
   letter-spacing: 2.8px;
-  margin-left: 73px;
-  margin-right: 20px;
+  margin-inline: 73px 20px;
   margin-bottom: 6px;
 
   @include mq(md) {
-    padding-block: 14px;
+    padding-block: 18px;
     padding-inline: 41px;
     margin-inline: 0;
     font-size: 16px;
@@ -309,6 +308,7 @@ li {
     line-height: 60px; /* 150% */
     letter-spacing: 4px;
     padding-block: 0 32px;
+    padding-inline: 0;
   }
 }
 .mv-title__middle{
