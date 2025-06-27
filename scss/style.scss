@@ -24,6 +24,19 @@ li {
   list-style: none;
 }
 
+.sp-hide{
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
+.pc-hide{
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
 .header{
   height: 68px;
   @include mq(md) {
@@ -222,7 +235,7 @@ li {
   grid-template-columns: repeat(8, auto);
   justify-content: center;
   align-items: center;
-  padding-block: 13px;
+  padding-block: 13px 9px;
   gap: 32px;
 }
 .pc-nav__list{
@@ -264,6 +277,9 @@ li {
 }
 .mv__inner{
   padding-block: 37px 0px;
+  @include mq(md) {
+    padding-inline: 191px 97px;
+  }
 }
 .mv__container{
   display: flex;
@@ -271,6 +287,11 @@ li {
   // gap: 12px;
   @include mq(md) {
     flex-direction: row;
+  }
+}
+.mv-text__wrpper{
+  @include mq(md) {
+
   }
 }
 .mv-title{
@@ -281,15 +302,30 @@ li {
   line-height: 36px; /* 150% */
   letter-spacing: 2.4px;
   padding-inline: 55px;
-  margin-block: 0 11px;
+  padding-block: 0 11px;
+  @include mq(md) {
+    text-align: left;
+    font-size: 40px;
+    line-height: 60px; /* 150% */
+    letter-spacing: 4px;
+    padding-block: 0 32px;
+  }
 }
 .mv-title__middle{
   font-size: 22px;
   letter-spacing: 2.2px;
+  @include mq(md) {
+    font-size: 32px;
+    line-height: 60px;
+    letter-spacing: 3.2px;
+  }
 }
 .mv-title__small{
   font-size: 20px;
   letter-spacing: 2px;
+  @include mq(md) {
+    font-size: 30px;
+  }
 }
 .mv-text{
   color: #393327;
@@ -300,6 +336,11 @@ li {
   display: grid;
   justify-content: center; /* 水平中央のみ */
   margin-inline: 0 10px;
+  @include mq(md) {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px; /* 150% */
+  }
 }
 .mv-image{
   max-width: 100%;

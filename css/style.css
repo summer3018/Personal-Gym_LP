@@ -7,6 +7,24 @@ li {
   list-style: none;
 }
 
+.sp-hide {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .sp-hide {
+    display: none;
+  }
+}
+
+.pc-hide {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc-hide {
+    display: block;
+  }
+}
+
 .header {
   height: 68px;
 }
@@ -187,7 +205,7 @@ li {
   grid-template-columns: repeat(8, auto);
   justify-content: center;
   align-items: center;
-  padding-block: 13px;
+  padding-block: 13px 9px;
   gap: 32px;
 }
 
@@ -231,6 +249,11 @@ li {
 .mv__inner {
   padding-block: 37px 0px;
 }
+@media screen and (min-width: 768px) {
+  .mv__inner {
+    padding-inline: 191px 97px;
+  }
+}
 
 .mv__container {
   display: flex;
@@ -250,17 +273,38 @@ li {
   line-height: 36px; /* 150% */
   letter-spacing: 2.4px;
   padding-inline: 55px;
-  margin-block: 0 11px;
+  padding-block: 0 11px;
+}
+@media screen and (min-width: 768px) {
+  .mv-title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 60px; /* 150% */
+    letter-spacing: 4px;
+    padding-block: 0 32px;
+  }
 }
 
 .mv-title__middle {
   font-size: 22px;
   letter-spacing: 2.2px;
 }
+@media screen and (min-width: 768px) {
+  .mv-title__middle {
+    font-size: 32px;
+    line-height: 60px;
+    letter-spacing: 3.2px;
+  }
+}
 
 .mv-title__small {
   font-size: 20px;
   letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .mv-title__small {
+    font-size: 30px;
+  }
 }
 
 .mv-text {
@@ -271,6 +315,13 @@ li {
   display: grid;
   justify-content: center; /* 水平中央のみ */
   margin-inline: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .mv-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px; /* 150% */
+  }
 }
 
 .mv-image {
