@@ -233,6 +233,11 @@ li {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .mv__container {
+    flex-direction: row;
+  }
+}
 
 .mv-title {
   color: #393327;

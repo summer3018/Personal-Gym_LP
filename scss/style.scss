@@ -266,6 +266,9 @@ li {
   display: flex;
   flex-direction: column;
   // gap: 12px;
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 .mv-title{
   color: #393327;
