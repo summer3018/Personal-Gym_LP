@@ -223,10 +223,13 @@ li {
 .mv {
   font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
   background-image: url(../image/mv-bg.png);
+  background-position: 51% center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .mv__inner {
-  margin-block: 37px 9px;
+  padding-block: 37px 0px;
 }
 
 .mv__container {
@@ -276,5 +279,7 @@ li {
   margin-inline: 15px 0;
 }
 .mv-image img {
-  height: 449px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
