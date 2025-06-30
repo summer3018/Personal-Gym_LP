@@ -213,6 +213,7 @@ li {
 
 .pc-headr__logo {
   max-width: 100%;
+  padding-top: 2px;
 }
 .pc-headr__logo img {
   height: 93.378px;
