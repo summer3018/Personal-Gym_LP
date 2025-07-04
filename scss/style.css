@@ -335,6 +335,11 @@ li {
   margin-block: -49px 0;
   margin-inline: 15px 0;
 }
+@media screen and (min-width: 768px) {
+  .mv-image {
+    padding-top: 50px;
+  }
+}
 .mv-image img {
   display: block;
   max-width: 100%;
