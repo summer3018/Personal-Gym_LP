@@ -293,6 +293,7 @@ li {
   padding-block: 37px 0px;
   @include mq(md) {
     padding-inline: 191px 97px;
+    padding-block: 0;
   }
 }
 .mv__container{
@@ -301,11 +302,12 @@ li {
   // gap: 12px;
   @include mq(md) {
     flex-direction: row;
+    
   }
 }
 .mv-text__wrpper{
   @include mq(md) {
-
+    padding-top: 220px;
   }
 }
 .mv-title{
@@ -365,5 +367,8 @@ li {
     display: block;
     max-width: 100%;
     height: auto; // or 指定高さを使うなら height: 449px; でもOK
+  }
+  @include mq(md) {
+    width: 600px;
   }
 }

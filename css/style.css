@@ -250,6 +250,7 @@ li {
 @media screen and (min-width: 768px) {
   .mv__inner {
     padding-inline: 191px 97px;
+    padding-block: 0;
   }
 }
 
@@ -260,6 +261,12 @@ li {
 @media screen and (min-width: 768px) {
   .mv__container {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mv-text__wrpper {
+    padding-top: 220px;
   }
 }
 
@@ -332,4 +339,9 @@ li {
   display: block;
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .mv-image {
+    width: 600px;
+  }
 }/*# sourceMappingURL=style.css.map */
