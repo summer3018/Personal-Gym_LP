@@ -374,3 +374,16 @@ li {
     display: none;
   }
 }
+
+.voice-card__image{
+  width: 335px;
+height: 223.333px;
+  @include mq(md) {
+    width: 450px;
+height: 300px;
+
+  }
+  img{
+
+  }
+}

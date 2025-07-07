@@ -346,4 +346,15 @@ li {
   .mv-image {
     display: none;
   }
+}
+
+.voice-card__image {
+  width: 335px;
+  height: 223.333px;
+}
+@media screen and (min-width: 768px) {
+  .voice-card__image {
+    width: 450px;
+    height: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
