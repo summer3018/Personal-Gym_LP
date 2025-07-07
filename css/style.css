@@ -243,6 +243,12 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .mv {
+    background-image: url(../image/PC/mv-bg.png);
+    height: 681px;
+  }
+}
 
 .mv__inner {
   padding-block: 37px 0px;
@@ -257,11 +263,6 @@ li {
 .mv__container {
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .mv__container {
-    flex-direction: row;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -286,7 +287,7 @@ li {
     font-size: 40px;
     line-height: 60px; /* 150% */
     letter-spacing: 4px;
-    padding-block: 0 32px;
+    padding-block: 0 28px;
     padding-inline: 0;
   }
 }
@@ -309,7 +310,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .mv-title__small {
-    font-size: 30px;
+    font-size: 33px;
   }
 }
 
@@ -327,6 +328,7 @@ li {
     font-size: 22px;
     font-weight: 400;
     line-height: 33px; /* 150% */
+    justify-content: left;
   }
 }
 
@@ -335,11 +337,6 @@ li {
   margin-block: -49px 0;
   margin-inline: 15px 0;
 }
-@media screen and (min-width: 768px) {
-  .mv-image {
-    padding-top: 50px;
-  }
-}
 .mv-image img {
   display: block;
   max-width: 100%;
@@ -347,6 +344,6 @@ li {
 }
 @media screen and (min-width: 768px) {
   .mv-image {
-    width: 600px;
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
