@@ -348,14 +348,54 @@ li {
   }
 }
 
-.voice-card__image {
-  width: 335px;
-  height: 223.333px;
+.voice {
+  font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
 }
-@media screen and (min-width: 768px) {
-  .voice-card__image {
-    width: 450px;
-    height: 300px;
-  }
+
+.voice__inner {
+  padding-block: 56px 0;
+  padding-inline: 20px;
+}
+
+.voice-title {
+  color: #8B6C3A;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: 1px;
+  padding-bottom: 40px;
+}
+
+.voice-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.voice-card__heading {
+  color: #393327;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px; /* 150% */
+  letter-spacing: 0.9px;
+  padding-block: 17px 9px;
+}
+
+.voice-comment__text {
+  color: #393327;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px; /* 180% */
+  letter-spacing: 0.32px;
+  padding-bottom: 12px;
+}
+
+.voice-meta__text {
+  color: #393327;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  letter-spacing: 0.7px;
 }
 /*# sourceMappingURL=style.css.map */
