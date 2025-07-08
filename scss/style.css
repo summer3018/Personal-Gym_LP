@@ -356,6 +356,12 @@ li {
   padding-block: 56px 0;
   padding-inline: 20px;
 }
+@media screen and (min-width: 768px) {
+  .voice__inner {
+    padding-inline: 191px;
+    padding-top: 96px;
+  }
+}
 
 .voice-title {
   color: #8B6C3A;
@@ -366,6 +372,13 @@ li {
   letter-spacing: 1px;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .voice-title {
+    font-size: 32px;
+    line-height: 48px; /* 150% */
+    letter-spacing: 3.2px;
+  }
+}
 
 .voice-container {
   display: flex;
@@ -373,29 +386,92 @@ li {
   gap: 40px;
 }
 
-.voice-card__heading {
+.voice-card {
   color: #393327;
+}
+@media screen and (min-width: 768px) {
+  .voice-card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice-card__second {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice-card__image {
+    width: 81%;
+    overflow: hidden;
+  }
+  .voice-card__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice__image1 {
+    padding-left: 95px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .voice__image2 {
+    padding-right: 103px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .voice__image3 {
+    padding-left: 90px;
+  }
+}
+.voice-card__heading {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px; /* 150% */
   letter-spacing: 0.9px;
   padding-block: 17px 11px;
 }
+@media screen and (min-width: 768px) {
+  .voice-card__heading {
+    font-size: 24px;
+    line-height: 36px; /* 150% */
+    letter-spacing: 2.4px;
+  }
+}
 
 .voice-comment__text {
-  color: #393327;
   font-size: 16px;
   font-weight: 400;
   line-height: 28.8px; /* 180% */
   letter-spacing: 0.32px;
   padding-bottom: 12px;
 }
+@media screen and (min-width: 768px) {
+  .voice-comment__text {
+    line-height: 32px; /* 200% */
+    letter-spacing: 0.8px;
+  }
+}
 
 .voice-meta__text {
-  color: #393327;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px; /* 150% */
   letter-spacing: 0.7px;
+}
+@media screen and (min-width: 768px) {
+  .voice-meta__text {
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.8px;
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=style.css.map */
