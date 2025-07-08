@@ -359,7 +359,7 @@ li {
 @media screen and (min-width: 768px) {
   .voice__inner {
     padding-inline: 191px;
-    padding-top: 96px;
+    padding-top: 90px;
   }
 }
 
@@ -377,6 +377,8 @@ li {
     font-size: 32px;
     line-height: 48px; /* 150% */
     letter-spacing: 3.2px;
+    padding-left: 6px;
+    padding-block: 4px 82px;
   }
 }
 
@@ -384,6 +386,11 @@ li {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .voice-container {
+    gap: 79px;
+  }
 }
 
 .voice-card {
@@ -423,7 +430,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .voice__image2 {
-    padding-right: 103px;
+    padding-right: 93px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -443,6 +450,8 @@ li {
     font-size: 24px;
     line-height: 36px; /* 150% */
     letter-spacing: 2.4px;
+    margin-top: 35px;
+    margin-block: 51px 22px;
   }
 }
 

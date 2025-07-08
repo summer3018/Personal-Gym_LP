@@ -393,7 +393,7 @@ li {
   padding-inline: 20px;
   @include mq(md) {
     padding-inline: 191px;
-    padding-top: 96px;
+    padding-top: 90px;
   }
 }
 .voice-title{
@@ -408,12 +408,17 @@ li {
     font-size: 32px;
     line-height: 48px; /* 150% */
     letter-spacing: 3.2px;
+    padding-left: 6px;
+    padding-block: 4px 82px;
   }
 }
 .voice-container{
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @include mq(md) {
+    gap: 79px;
+  }
 }
 .voice-card{
   color: $black;
@@ -451,7 +456,7 @@ li {
 }
 .voice__image2{
   @include mq(md) {
-    padding-right: 103px;
+    padding-right: 93px;
   }
   img{
 
@@ -472,9 +477,11 @@ li {
   letter-spacing: 0.9px;
   padding-block: 17px 11px;
   @include mq(md) {
-font-size: 24px;
-line-height: 36px; /* 150% */
-letter-spacing: 2.4px;
+    font-size: 24px;
+    line-height: 36px; /* 150% */
+    letter-spacing: 2.4px;
+    margin-top: 35px;
+    margin-block: 51px 22px;
   }
 }
 .voice-comment__text{
