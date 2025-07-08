@@ -292,10 +292,11 @@ li {
 // mv
 .mv{
   font-family: $Minchou;
-  background-image: url(../image/mv-bg.png);
+  background-image: url(../image/mv-bg-SP.png);
   background-position: 51% center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 602px;
   @include mq(md) {
     background-image: url(../image/PC/mv-bg.png);
     height: 681px;
@@ -427,18 +428,17 @@ li {
     flex-direction: row-reverse;
   }
 }
-.voice-card__second{
-  @include mq(md) {
-    flex-direction: row;
-  }
-}
+
 .voice-card__image{
+  img{
+    max-width: 100%;
+  }
   @include mq(md) {
     width: 81%;
     // height: 498px;
     overflow: hidden; // はみ出し防止（必要に応じて）
     img{
-      width: 100%;
+      max-width: 100%;
       height: 100%;
       object-fit: cover; // or contain
       display: block;
@@ -508,5 +508,61 @@ li {
   }
 }
 // voice-card1
+.voice__card1{
+
+}
+.voice__image1{
+
+}
+.voice-card__texts1{
+
+}
+.voice-card__heading1{
+
+}
+.voice-card__comment1{
+
+}
+.voice-card__meta1{
+
+}
 // voice-card2
+.voice__card2{
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+.voice__image2{
+
+}
+.voice-card__texts2{
+
+}
+.voice-card__heading2{
+
+}
+.voice-card__comment2{
+
+}
+.voice-card__meta2{
+
+}
 // voice-card3
+.voice__card3{
+
+}
+.voice__image3{
+
+}
+.voice-card__texts3{
+
+}
+.voice-card__heading3{
+
+}
+.voice-card__comment3{
+
+}
+.voice-card__meta3{
+  
+}
