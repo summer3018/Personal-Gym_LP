@@ -390,7 +390,7 @@ li {
   font-family: $Minchou;
 }
 .voice__inner{
-  padding-block: 56px 0;
+  padding-block: 56px 96px;
   padding-inline: 20px;
   @include mq(md) {
     padding-inline: 191px;
@@ -524,7 +524,9 @@ li {
 
 }
 .voice-card__meta1{
-
+ @include mq(md) {
+  margin-right: 8px;
+ }
 }
 // voice-card2
 .voice__card2{
@@ -539,7 +541,10 @@ li {
 
 }
 .voice-card__heading2{
-
+  @include mq(md) {
+    margin-block: 70px 22px;
+    margin-left: 11px;
+  }
 }
 .voice-card__comment2{
 
@@ -552,17 +557,28 @@ li {
 
 }
 .voice__image3{
-
+  @include mq(md) {
+    padding-left: 88px;
+    margin-top: 2px;
+  }
 }
+
 .voice-card__texts3{
 
 }
 .voice-card__heading3{
-
+  @include mq(md) {
+    margin-block: 68px 20px;
+  }
 }
 .voice-card__comment3{
-
+  @include mq(md) {
+    line-height: 25px;
+    padding-bottom: 11px;
+  }
 }
 .voice-card__meta3{
-  
+  @include mq(md) {
+    margin-right: 5px;
+  }
 }

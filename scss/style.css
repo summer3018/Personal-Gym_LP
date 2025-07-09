@@ -354,7 +354,7 @@ li {
 }
 
 .voice__inner {
-  padding-block: 56px 0;
+  padding-block: 56px 96px;
   padding-inline: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -483,8 +483,47 @@ li {
 }
 
 @media screen and (min-width: 768px) {
+  .voice-card__meta1 {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .voice__card2 {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice-card__heading2 {
+    margin-block: 70px 22px;
+    margin-left: 11px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice__image3 {
+    padding-left: 88px;
+    margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice-card__heading3 {
+    margin-block: 68px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice-card__comment3 {
+    line-height: 25px;
+    padding-bottom: 11px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice-card__meta3 {
+    margin-right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
