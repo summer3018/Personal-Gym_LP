@@ -625,7 +625,7 @@ li {
 }
 .profile-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   @include mq(md) {
     flex-direction: row;
   }
