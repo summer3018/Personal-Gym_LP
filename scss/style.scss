@@ -582,3 +582,98 @@ li {
     margin-right: 5px;
   }
 }
+
+// profile
+.profile{
+
+}
+.profile__inner{
+
+}
+.profile-title{
+  color: $black;
+  font-family: Lora;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px; /* 150% */
+  letter-spacing: 1.4px;
+}
+.profile-title__jp{
+  color: $black;
+  font-family: $Minchou;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  letter-spacing: 1.4px;
+}
+.profile-container{
+
+}
+.profile-image{
+  img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; // or contain
+    display: block;
+  }
+}
+.profile-texts{
+
+}
+.profile-name__container{
+
+}
+.profile-name{
+  color: $black;
+  font-family: $Minchou;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px; /* 100% */
+  letter-spacing: 2.4px;
+}
+.profile-sns-icons{
+
+}
+.profile-sns__youtube{
+  img{
+
+  }
+}
+.profile-sns__twitter{
+  img{
+
+  }
+}
+.profile-sns__instagram{
+  img{
+
+  }
+}
+.profile-text{
+  color: $black;
+  font-family: $Minchou;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px; /* 180% */
+  letter-spacing: 0.32px;
+}
+.profile-message__container{
+
+}
+.message-title{
+  color: $accent-brown;
+  font-family: Allura;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 4px;
+}
+.profile-message__text{
+  color: $black;
+  text-align: justify;
+  font-family: $Minchou;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px; /* 180% */
+  letter-spacing: 0.32px;
+}
