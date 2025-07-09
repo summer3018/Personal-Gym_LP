@@ -1,5 +1,6 @@
 $Minchou :"Yu Mincho", "游明朝", "YuMincho", serif;
 $Lora: "Lora", serif;
+$Allura: "Allura", cursive;
 
 $black:#393327;
 $white: #FFFFFF;
@@ -42,7 +43,7 @@ li {
   }
 }
 .section__inner{
-
+ padding-inline: 20px;
 }
 
 .header{
@@ -557,6 +558,7 @@ li {
 
 }
 .voice__image3{
+  margin-top: 3px;
   @include mq(md) {
     padding-left: 88px;
     margin-top: 2px;
@@ -567,6 +569,7 @@ li {
 
 }
 .voice-card__heading3{
+  margin-block: 17px 12px;
   @include mq(md) {
     margin-block: 68px 20px;
   }
@@ -588,15 +591,22 @@ li {
 
 }
 .profile__inner{
-
+  padding-bottom: 80px;
 }
 .profile-title{
   color: $black;
-  font-family: Lora;
+  font-family: $Lora;
   font-size: 28px;
   font-weight: 400;
   line-height: 42px; /* 150% */
   letter-spacing: 1.4px;
+  margin: 0 auto;
+  text-align: center;
+  @include mq(md) {
+    font-size: 56px;
+    line-height: 56px; /* 100% */
+    letter-spacing: 4.48px;
+  }
 }
 .profile-title__jp{
   color: $black;
@@ -605,9 +615,20 @@ li {
   font-weight: 400;
   line-height: 21px; /* 150% */
   letter-spacing: 1.4px;
+  margin: 0 auto 41px;
+  text-align: center;
+  @include mq(md) {
+    font-size: 16px;
+    line-height: 16px; /* 100% */
+    letter-spacing: 1.6px;
+  }
 }
 .profile-container{
-
+  display: flex;
+  flex-direction: row;
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 .profile-image{
   img{
@@ -618,10 +639,11 @@ li {
   }
 }
 .profile-texts{
-
+  // max-width: 375px;
 }
 .profile-name__container{
-
+  display: flex;
+  margin-block: 32px 19px;
 }
 .profile-name{
   color: $black;
@@ -630,9 +652,16 @@ li {
   font-weight: 600;
   line-height: 24px; /* 100% */
   letter-spacing: 2.4px;
+  margin-right: 64px;
+  margin-top: 6px;
+  @include mq(md) {
+
+  }
 }
 .profile-sns-icons{
-
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
 }
 .profile-sns__youtube{
   img{
@@ -656,17 +685,32 @@ li {
   font-weight: 400;
   line-height: 28.8px; /* 180% */
   letter-spacing: 0.32px;
+  margin-bottom: 48px;
+  @include mq(md) {
+    line-height: 32px; /* 200% */
+    letter-spacing: 0.8px;
+  }
 }
 .profile-message__container{
-
+  border: 1px solid #8B6C3A;
+  background: #FFF;
+  padding-block: 22px 26px;
+  padding-inline: 20px;
 }
 .message-title{
   color: $accent-brown;
-  font-family: Allura;
+  font-family: $Allura;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px; /* 100% */
   letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 14px;
+  margin-left: 4px;
+  @include mq(md) {
+    font-size: 56px;
+    letter-spacing: 5.6px;
+  }
 }
 .profile-message__text{
   color: $black;
@@ -676,4 +720,8 @@ li {
   font-weight: 400;
   line-height: 28.8px; /* 180% */
   letter-spacing: 0.32px;
+  @include mq(md) {
+    line-height: 32px; /* 200% */
+    letter-spacing: 1.6px;
+  }
 }
