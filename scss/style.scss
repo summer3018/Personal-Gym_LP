@@ -395,7 +395,7 @@ li {
   padding-inline: 20px;
   @include mq(md) {
     padding-inline: 191px;
-    padding-top: 90px;
+    padding-block: 90px 192px;
   }
 }
 .voice-title{
@@ -592,6 +592,9 @@ li {
 }
 .profile__inner{
   padding-bottom: 80px;
+  @include mq(md) {
+    padding-inline: 278px 183px;
+  }
 }
 .profile-title{
   color: $black;
@@ -606,6 +609,8 @@ li {
     font-size: 56px;
     line-height: 56px; /* 100% */
     letter-spacing: 4.48px;
+    margin-block: 0 39px;
+    margin-inline: 162px 249px;
   }
 }
 .profile-title__jp{
@@ -621,6 +626,7 @@ li {
     font-size: 16px;
     line-height: 16px; /* 100% */
     letter-spacing: 1.6px;
+    margin-block: 0 50px;
   }
 }
 .profile-container{
@@ -628,6 +634,7 @@ li {
   flex-direction: column;
   @include mq(md) {
     flex-direction: row;
+    gap: 124px;
   }
 }
 .profile-image{
@@ -636,6 +643,10 @@ li {
     height: 100%;
     object-fit: cover; // or contain
     display: block;
+    @include mq(md) {
+      width: 452px;
+// height: 678px;
+    }
   }
 }
 .profile-texts{
@@ -655,7 +666,7 @@ li {
   margin-right: 64px;
   margin-top: 6px;
   @include mq(md) {
-
+    margin-right: 93px;
   }
 }
 .profile-sns-icons{

@@ -364,7 +364,7 @@ li {
 @media screen and (min-width: 768px) {
   .voice__inner {
     padding-inline: 191px;
-    padding-top: 90px;
+    padding-block: 90px 192px;
   }
 }
 
@@ -540,6 +540,11 @@ li {
 .profile__inner {
   padding-bottom: 80px;
 }
+@media screen and (min-width: 768px) {
+  .profile__inner {
+    padding-inline: 278px 183px;
+  }
+}
 
 .profile-title {
   color: #393327;
@@ -556,6 +561,8 @@ li {
     font-size: 56px;
     line-height: 56px; /* 100% */
     letter-spacing: 4.48px;
+    margin-block: 0 39px;
+    margin-inline: 162px 249px;
   }
 }
 
@@ -574,6 +581,7 @@ li {
     font-size: 16px;
     line-height: 16px; /* 100% */
     letter-spacing: 1.6px;
+    margin-block: 0 50px;
   }
 }
 
@@ -584,6 +592,7 @@ li {
 @media screen and (min-width: 768px) {
   .profile-container {
     flex-direction: row;
+    gap: 124px;
   }
 }
 
@@ -593,6 +602,11 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .profile-image img {
+    width: 452px;
+  }
 }
 
 .profile-name__container {
@@ -610,6 +624,12 @@ li {
   margin-right: 64px;
   margin-top: 6px;
 }
+@media screen and (min-width: 768px) {
+  .profile-name {
+    margin-right: 93px;
+  }
+}
+
 .profile-sns-icons {
   display: flex;
   flex-direction: row;
