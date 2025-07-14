@@ -636,8 +636,8 @@ li {
   font-weight: 600;
   line-height: 24px; /* 100% */
   letter-spacing: 2.4px;
-  margin-right: 64px;
-  margin-top: 6px;
+  margin-inline: 0 19%;
+  margin-block: 6px 0;
 }
 @media screen and (min-width: 768px) {
   .profile-name {
@@ -649,6 +649,18 @@ li {
   display: flex;
   flex-direction: row;
   gap: 23px;
+}
+
+.profile-sns__youtube img {
+  max-width: 100%;
+}
+
+.profile-sns__twitter img {
+  max-width: 100%;
+}
+
+.profile-sns__instagram img {
+  max-width: 100%;
 }
 
 .profile-text {
@@ -726,23 +738,51 @@ li {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .onayami-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-block: 18px 0;
+  }
+}
+
 .onayami-image {
   margin-block: 0 33.68px;
 }
 .onayami-image img {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .onayami-image img {
+    max-width: 797px;
+    height: 481px;
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .onayami-image {
+    margin-block: 0;
+  }
+}
 
 .onayami-title {
   color: #1A1A1A;
   font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
   letter-spacing: 1px;
   margin-inline: 20px 0;
-  margin-block: 0 18px;
+  margin-block: 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .onayami-title {
+    font-size: 24px;
+    line-height: 36px; /* 150% */
+    letter-spacing: 1.2px;
+    padding-top: 95px;
+    margin-bottom: 34px;
+  }
 }
 
 .onayami-lists {
@@ -757,25 +797,63 @@ li {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
-  gap: 8px;
 }
-.onayami-check__text:nth-of-type(1) {
-  margin-bottom: 11px;
-}
-.onayami-check__text:nth-of-type(2) {
-  margin-bottom: 26px;
-}
-.onayami-check__text:nth-of-type(3) {
-  margin-bottom: 10px;
-}
-.onayami-check__text:nth-of-type(4) {
-  margin-bottom: 10px;
-}
-.onayami-check__text:nth-of-type(5) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .onayami-check__text {
+    font-size: 18px;
+    line-height: 27px; /* 150% */
+    letter-spacing: 0.9px;
+    flex: 1;
+  }
 }
 
 .onayami-check {
   display: flex;
+  align-items: flex-start;
   gap: 8px;
+}
+
+.onayami-check__text1 {
+  margin-bottom: 11px;
+}
+@media screen and (min-width: 768px) {
+  .onayami-check__text1 {
+    margin-bottom: 21px;
+  }
+}
+
+.onayami-check__text2 {
+  margin-bottom: 26px;
+}
+@media screen and (min-width: 768px) {
+  .onayami-check__text2 {
+    margin-bottom: 20px;
+  }
+}
+
+.onayami-check__text3 {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .onayami-check__text3 {
+    margin-bottom: 21px;
+  }
+}
+
+.onayami-check__text4 {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .onayami-check__text4 {
+    margin-bottom: 21px;
+  }
+}
+
+.onayami-check__text5 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .onayami-check__text5 {
+    margin-bottom: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
