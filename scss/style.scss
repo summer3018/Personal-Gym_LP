@@ -782,6 +782,7 @@ li {
   }
   @include mq(md) {
     margin-block: 0;
+    margin-inline: -120px 0;
   }
 }
 .onayami-texts{
