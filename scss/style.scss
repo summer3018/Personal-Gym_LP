@@ -636,7 +636,7 @@ li {
   @include mq(md) {
     flex-direction: row;
     gap: 47px;
-    margin-block: 0 39px;
+    margin-block: 0 78px;
   }
 }
 .profile-image{
@@ -649,8 +649,8 @@ li {
     object-fit: cover; // or contain
     display: block;
     @include mq(md) {
-        width: 607px;
-        height: 360px;
+        max-width: 125%;
+        height: 361px;
     }
   }
 }
@@ -706,6 +706,7 @@ li {
   @include mq(md) {
     line-height: 32px; /* 200% */
     letter-spacing: 0.8px;
+    margin-bottom: 0;
   }
 }
 .profile-message__container{
@@ -716,6 +717,7 @@ li {
   @include mq(md) {
     padding-block: 64px;
     padding-inline: 90px 88px;
+    margin-inline: 0 101px;
   }
 }
 .message-title{
@@ -731,6 +733,7 @@ li {
   @include mq(md) {
     font-size: 56px;
     letter-spacing: 5.6px;
+    margin-bottom: 38px;
   }
 }
 .profile-message__text{

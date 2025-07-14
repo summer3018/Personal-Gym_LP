@@ -594,7 +594,7 @@ li {
   .profile-container {
     flex-direction: row;
     gap: 47px;
-    margin-block: 0 39px;
+    margin-block: 0 78px;
   }
 }
 
@@ -612,8 +612,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .profile-image img {
-    width: 607px;
-    height: 360px;
+    max-width: 125%;
+    height: 361px;
   }
 }
 
@@ -657,6 +657,7 @@ li {
   .profile-text {
     line-height: 32px; /* 200% */
     letter-spacing: 0.8px;
+    margin-bottom: 0;
   }
 }
 
@@ -670,6 +671,7 @@ li {
   .profile-message__container {
     padding-block: 64px;
     padding-inline: 90px 88px;
+    margin-inline: 0 101px;
   }
 }
 
@@ -688,6 +690,7 @@ li {
   .message-title {
     font-size: 56px;
     letter-spacing: 5.6px;
+    margin-bottom: 38px;
   }
 }
 
