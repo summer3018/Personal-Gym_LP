@@ -589,15 +589,22 @@ li {
 .profile-container {
   display: flex;
   flex-direction: column;
+  gap: 0;
 }
 @media screen and (min-width: 768px) {
   .profile-container {
     flex-direction: row;
-    gap: 47px;
+    align-items: flex-start;
+    gap: 91px;
     margin-block: 0 78px;
   }
 }
 
+.profile-image {
+  width: 100%;
+  max-width: 360px;
+  flex-shrink: 0;
+}
 @media screen and (min-width: 768px) {
   .profile-image {
     margin-top: 31px;
@@ -619,7 +626,7 @@ li {
 
 .profile-name__container {
   display: flex;
-  margin-block: 32px 19px;
+  margin-block: 32px 25px;
 }
 
 .profile-name {
@@ -634,7 +641,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .profile-name {
-    margin-right: 93px;
+    margin-right: 157px;
   }
 }
 
@@ -658,6 +665,7 @@ li {
     line-height: 32px; /* 200% */
     letter-spacing: 0.8px;
     margin-bottom: 0;
+    padding-right: 93px;
   }
 }
 
@@ -670,7 +678,7 @@ li {
 @media screen and (min-width: 768px) {
   .profile-message__container {
     padding-block: 64px;
-    padding-inline: 90px 88px;
+    padding-inline: 90px 93px;
     margin-inline: 0 101px;
   }
 }

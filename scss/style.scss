@@ -633,13 +633,19 @@ li {
 .profile-container{
   display: flex;
   flex-direction: column;
+  gap: 0;
   @include mq(md) {
     flex-direction: row;
-    gap: 47px;
+    align-items: flex-start;
+    gap: 91px; // 間をあける
     margin-block: 0 78px;
+
   }
 }
-.profile-image{
+.profile-image{ 
+  width: 100%;
+  max-width: 360px; // デザインカンプに合わせて調整
+  flex-shrink: 0; // ← 画像が縮まないように追加！
   @include mq(md) {
     margin-top: 31px;
   }
@@ -659,7 +665,7 @@ li {
 }
 .profile-name__container{
   display: flex;
-  margin-block: 32px 19px;
+  margin-block: 32px 25px;
   
 }
 .profile-name{
@@ -672,7 +678,7 @@ li {
   margin-right: 64px;
   margin-top: 6px;
   @include mq(md) {
-    margin-right: 93px;
+    margin-right: 157px;
   }
 }
 .profile-sns-icons{
@@ -707,6 +713,7 @@ li {
     line-height: 32px; /* 200% */
     letter-spacing: 0.8px;
     margin-bottom: 0;
+    padding-right: 93px;
   }
 }
 .profile-message__container{
@@ -716,7 +723,7 @@ li {
   padding-inline: 20px;
   @include mq(md) {
     padding-block: 64px;
-    padding-inline: 90px 88px;
+    padding-inline: 90px 93px;
     margin-inline: 0 101px;
   }
 }
